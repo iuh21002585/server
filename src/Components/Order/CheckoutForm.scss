@@ -1,0 +1,77 @@
+.checkout-modal {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    padding: 20px;
+    // thay đổi kích thước chiều cao
+    height: 70%;
+    // giữ nguyên form
+    overflow: auto;
+    width: 80%; /* Thay đổi kích thước chiều rộng */
+    max-width: 800px; /* Đảm bảo modal không vượt quá 800px */
+    margin: 50px auto;
+    position: relative;
+    z-index: 98;
+}
+
+.checkout-overlay {
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 98;
+}
+
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group input:focus, .form-group select:focus {
+    border-color: #000000;
+    outline: none;
+}
+
+button {
+    background-color: #000000;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #000000;
+}
